@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="header-logo">
+            <a class="header-logo__link" href="../../index.html">
+                <img class="header-logo__img" src="../img/logo.png" alt="Логотип"
+                     data-toggle="tooltip" data-placement="top" title="Это кликабельный логотип.">
+            </a>
+        </div>
+
+        <nav class="header-navbar">
+            <ul class="header-navbar__list">
+                <li><a href="#">О кампании</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas dignissim fermentum luctus</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas lacinia sem</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Портфолио</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas lacinia sem</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas dignissim fermentum luctus</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="sign_in.html">Войти</a></li>
+                <li><a href="#">Техподдержка</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>Регистрация</h1>
+
+    <form action="file.php" method="post">
+        <fieldset class="form-group">
+            <legend>#1 Основные данные</legend>
+            <label class="basic_data">Ф.И.О.: <input class="user_name" type="text" name="text" minlength="3"
+                                                     maxlength="100" placeholder="Фамилия Имя Отчество"></label>
+            <label class="basic_data">Фото: <input type="file" name="file"></label>
+            <label class="basic_data">Дата рождения:<input type="date" name="dob"></label>
+            <label class="basic_data">Адрес электронной почты: <input type="email" name="email"
+                                                                      placeholder="...@com."></label>
+            <label class="basic_data">Логин: <input class="login" type="text" name="text" minlength="3"
+                                                     maxlength="100" placeholder="..."></label>
+            <div><label>Пароль: <input onblur="validatePassword(this.form)" type="password" name="password" minlength="6" maxlength="10"
+                                       placeholder="Введите пароль"></label></div>
+            <div><label>Повторите пароль: <input onblur="validatePasswordRep(this.form)" type="password" name="password2" minlength="6" maxlength="10"
+                                                 placeholder="Повторите пароль"></label></div>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>#2 Необязательные данные</legend>
+            <div class="choice-design">
+                <div>Выберите пол:</div>
+                <label>мужской<input type="radio" name="gender"></label>
+                <label>женский<input type="radio" name="gender"></label>
+            </div>
+
+            <div class="choice-design">
+                <div>Предпочитаемая кухня:</div>
+                <label><input name="ua" type="checkbox">Украинская</label>
+                <label><input name="gr" type="checkbox">Грузинская</label>
+                <label><input name="it" type="checkbox">Итальянская</label>
+                <label><input name="fr" type="checkbox">Французская</label>
+                <label><input name="us" type="checkbox">Американская</label>
+                <label><input name="jp" type="checkbox">Японская</label>
+                <label><input name="ch" type="checkbox">Китайская</label>
+            </div>
+        </fieldset>
+        <fieldset class="registration-btn">
+            <input class="btn btn-secondary"  type="submit" value="Зарегистрироваться">
+            <input class="btn btn-secondary"  type="reset" value="Очистить форму">
+        </fieldset>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

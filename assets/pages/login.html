@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вход</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="header-logo">
+            <a class="header-logo__link" href="../../index.html">
+                <img class="header-logo__img" src="../img/logo.png" alt="Логотип"
+                     data-toggle="tooltip" data-placement="top" title="Это кликабельный логотип.">
+            </a>
+        </div>
+
+        <nav class="header-navbar">
+            <ul class="header-navbar__list">
+                <li><a href="#">О кампании</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas dignissim fermentum luctus</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas lacinia sem</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Портфолио</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas lacinia sem</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Maecenas dignissim fermentum luctus</a></li>
+                        <li><a href="#">Suspendisse fringilla</a></li>
+                    </ul>
+                </li>
+                <li><a href="sign_in.html">Войти</a></li>
+                <li><a href="#">Техподдержка</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main login-main">
+    <h1>Используйте свой аккаунт</h1>
+
+        <form class="login-form" action="file.php" method="post">
+            <fieldset class="form-group">
+                <legend># Введите данные</legend>
+                <label class="basic_data">Логин: <input class="login" type="text" name="text" minlength="3"
+                                                        maxlength="100" placeholder="..."></label>
+                <label class="basic_data">Пароль: <input type="password" name="passw" minlength="6" maxlength="10"
+                                                         placeholder="Введите пароль"></label>
+
+                <div class="login-btn">
+                    <a class="btn btn-secondary" href="registration.html" role="button">Зарегистрироваться</a>
+                    <input class="btn btn-secondary" type="submit" value="Войти">
+                    <input class="btn btn-secondary" type="reset" value="Очистить форму">
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

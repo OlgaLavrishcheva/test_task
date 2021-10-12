@@ -1,0 +1,75 @@
+.apples {
+
+  &__container {
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+  }
+
+  &-item {
+    position: relative;
+    background-color: $color-standart;
+    overflow: hidden;
+    min-height: calc(33.333vh - 100px / 3);
+
+    &:hover {
+      .apples-item__overlay {
+        opacity: 0.95 !important;
+      }
+
+      .apples-item__image {
+        transform: scale(1.1);
+      }
+
+      .apples-item__link {
+        color: $color-accent;
+      }
+    }
+
+    &__overlay {
+      @include abs-position;
+
+      z-index: 1;
+      opacity: 0.8;
+      background-color: $color-standart;
+      transition: opacity 0.5s;
+    }
+
+    &__image {
+      @include abs-position;
+
+      background-position: 50%;
+      background-size: cover;
+      transition: transform 0.5s;
+    }
+
+    &__title {
+      @include abs-position;
+
+      z-index: 2;
+      margin: 0;
+    }
+
+    &__link {
+      display: flex;
+      padding: $gap;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.1em;
+      transition: color 0.5s;
+    }
+
+
+  }
+
+  }
+
+@for $i from 1 through 9 {
+  .apples-item:nth-of-type(#{$i}) {
+    grid-area: a#{$i};
+  }
+}

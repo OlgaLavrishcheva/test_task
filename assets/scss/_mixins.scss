@@ -1,0 +1,15 @@
+@mixin bg-color {
+  background: rgba(204, 204, 204, 0.4);
+}
+
+@mixin container-indentation {
+  padding: 20px 40px;
+}
+
+@mixin abs-position ($t:0, $b:0, $l:0, $r:0) {
+  position: absolute;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+}

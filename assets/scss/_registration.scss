@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 $gap 0;
+}
+
+.form-group {
+  border: solid 1px $color-dark;
+  padding: 20px;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+.choice-design input {
+  margin: 0 3px 0 3px;
+}
+
+.choice-design label:hover {
+  text-shadow: 0 14px 28px rgba(0,0,0,0.7), 0 10px 10px rgba(0,0,0,0.7);
+  transition: text-shadow 3s;
+}
+
+.basic_data {
+  display: block;
+  margin-top: 10px;
+
+  & input {
+    width: 100%;
+  }
+}
+
+.registration-btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
